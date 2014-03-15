@@ -43,8 +43,14 @@
               <label for="whitenoise-opt"></label>
             </div>
             <p>Play white noise.</p>
-            <audio id="whitenoise" src="audio/brownnoise.ogg" loop></audio>
-            <audio id="tone" src="audio/tone.ogg"></audio>
+            <audio id="whitenoise" loop>
+              <source src="audio/brownnoise.ogg" type="audio/ogg">
+              <source src="audio/brownnoise.mp3" type="audio/mp3">
+              </audio>
+            <audio id="tone">
+              <source src="audio/tone.ogg" type="audio/ogg" />
+              <source src="audio/tone.mp3" type="audio/mp3" />
+            </audio>
           </div>
         </div>
       </div>
